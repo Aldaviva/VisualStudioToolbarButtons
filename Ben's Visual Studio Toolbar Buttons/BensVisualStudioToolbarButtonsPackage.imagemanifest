@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageManifest
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">
+
+    <Symbols>
+        <String Name="Resources" Value="/Aldaviva.VisualStudioToolbarButtons;Component/Resources" />
+        <Guid Name="MyImageManifestGuid" Value="{07BDF4A9-DEBF-4D4C-AF57-6350FEBCC6CB}" />
+    </Symbols>
+
+    <Images>
+        <Image Guid="$(MyImageManifestGuid)" ID="1" AllowColorInversion="false">
+            <Source Uri="$(Resources)/gitextensions-16.png">
+                <Size Value="16" />
+            </Source>
+            <Source Uri="$(Resources)/gitextensions-24.png">
+                <Size Value="24" />
+            </Source>
+            <Source Uri="$(Resources)/gitextensions-32.png">
+                <Size Value="32" />
+            </Source>
+            <Source Uri="$(Resources)/gitextensions-48.png">
+                <Size Value="48" />
+            </Source>
+            <Source Uri="$(Resources)/gitextensions-64.png">
+                <Size Value="64" />
+            </Source>
+        </Image>
+
+        <Image Guid="$(MyImageManifestGuid)" ID="2" AllowColorInversion="false">
+            <Source Uri="$(Resources)/totalcommander-16.png">
+                <Size Value="16" />
+            </Source>
+            <Source Uri="$(Resources)/totalcommander-24.png">
+                <Size Value="24" />
+            </Source>
+            <Source Uri="$(Resources)/totalcommander-32.png">
+                <Size Value="32" />
+            </Source>
+            <Source Uri="$(Resources)/totalcommander-48.png">
+                <Size Value="48" />
+            </Source>
+        </Image>
+    </Images>
+
+    <ImageLists />
+</ImageManifest>
