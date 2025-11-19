@@ -20,7 +20,7 @@ External Tools are easy to create, but they don't let you specify custom icons f
 
 ## Buttons
 
-<p align="center"><img src=".github/images/screenshot1.png" alt="Custom buttons in VS toolbar" /></p>
+<p align="center"><img src="./Ben's%20Visual%20Studio%20Toolbar%20Buttons/screenshot1.png" alt="Custom buttons in VS toolbar" /></p>
 
 - Bitbucket
     - Opens current repository's [Bitbucket](https://bitbucket.org/) web page

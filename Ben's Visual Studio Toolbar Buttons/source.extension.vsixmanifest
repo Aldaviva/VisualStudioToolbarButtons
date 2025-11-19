@@ -3,16 +3,10 @@
     <Metadata>
         <Identity Id="94cf4a43-0e5c-4af3-8321-41df2e49153c" Version="1.0.0" Language="en-US" Publisher="Ben Hutchison" />
         <DisplayName>Ben's Visual Studio Toolbar Buttons</DisplayName>
-        <Description xml:space="preserve">Add custom buttons to the Visual Studio toolbar.
-
-The following commands can be found in the Tools menu, and you can add them to toolbars:
-- Bitbucket
-- Git Extensions
-- GitHub
-- Sublime Text
-- Total Commander</Description>
+        <Description xml:space="preserve">Add custom buttons to the Visual Studio toolbar to launch Bitbucket web, Git Extensions, GitHub web, Sublime Text, and Total Commander for the current repo/project/file.</Description>
         <License>License.txt</License>
         <Icon>ben.ico</Icon>
+        <PreviewImage>screenshot1.png</PreviewImage>
         <Tags>toolbar button totalcommander sublimetext bitbucket github gitextensions</Tags>
         <Preview>true</Preview>
     </Metadata>
@@ -21,6 +15,18 @@ The following commands can be found in the Tools menu, and you can add them to t
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,)">
+            <ProductArchitecture>arm64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,)">
+            <ProductArchitecture>arm64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0,)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0,)">
             <ProductArchitecture>arm64</ProductArchitecture>
         </InstallationTarget>
     </Installation>
