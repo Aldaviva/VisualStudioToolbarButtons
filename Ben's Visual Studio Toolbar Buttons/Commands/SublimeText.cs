@@ -10,7 +10,7 @@ namespace Aldaviva.VisualStudioToolbarButtons.Commands;
 
 internal class SublimeText: AbstractButtonCommand {
 
-    public override int commandId => 0x105;
+    public override int commandId => 104;
 
     private static readonly string[] UNINSTALL_KEYS = [
         @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Sublime Text 4_is1",

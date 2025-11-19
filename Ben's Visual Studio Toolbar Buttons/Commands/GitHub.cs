@@ -4,7 +4,7 @@ namespace Aldaviva.VisualStudioToolbarButtons.Commands;
 
 internal class GitHub: ScmRepoHostingCommand {
 
-    public override int commandId => 0x103;
+    public override int commandId => 103;
 
     protected override string hostname => "github.com";
 

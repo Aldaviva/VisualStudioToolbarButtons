@@ -11,7 +11,11 @@
     </Symbols>
 
     <Images>
-        <Image Guid="$(imageManifest)" ID="1" AllowColorInversion="false">
+        <Image Guid="$(imageManifest)" ID="101" AllowColorInversion="false">
+            <Source Uri="$(Resources)/bitbucket.xaml" />
+        </Image>
+        
+        <Image Guid="$(imageManifest)" ID="102" AllowColorInversion="false">
             <Source Uri="$(Resources)/gitextensions-16.png">
                 <Size Value="16" />
             </Source>
@@ -26,31 +30,12 @@
             </Source>
         </Image>
 
-        <Image Guid="$(imageManifest)" ID="2" AllowColorInversion="false">
-            <Source Uri="$(Resources)/totalcommander-16.png">
-                <Size Value="16" />
-            </Source>
-            <Source Uri="$(Resources)/totalcommander-24.png">
-                <Size Value="24" />
-            </Source>
-            <Source Uri="$(Resources)/totalcommander-32.png">
-                <Size Value="32" />
-            </Source>
-            <Source Uri="$(Resources)/totalcommander-48.png">
-                <Size Value="48" />
-            </Source>
-        </Image>
-
-        <Image Guid="$(imageManifest)" ID="3">
+        <Image Guid="$(imageManifest)" ID="103">
             <Source Uri="$(Resources)/github-light.xaml" Background="Light" />
             <Source Uri="$(Resources)/github-dark.xaml" Background="Dark" />
         </Image>
-        
-        <Image Guid="$(imageManifest)" ID="4" AllowColorInversion="false">
-            <Source Uri="$(Resources)/bitbucket.xaml" />
-        </Image>
-        
-        <Image Guid="$(imageManifest)" ID="5" AllowColorInversion="false">
+
+        <Image Guid="$(imageManifest)" ID="104" AllowColorInversion="false">
             <Source Uri="$(Resources)/sublimetext-16.png">
                 <Size Value="16" />
             </Source>
@@ -65,10 +50,25 @@
             </Source>
         </Image>
         
+        <Image Guid="$(imageManifest)" ID="105" AllowColorInversion="false">
+            <Source Uri="$(Resources)/totalcommander-16.png">
+                <Size Value="16" />
+            </Source>
+            <Source Uri="$(Resources)/totalcommander-24.png">
+                <Size Value="24" />
+            </Source>
+            <Source Uri="$(Resources)/totalcommander-32.png">
+                <Size Value="32" />
+            </Source>
+            <Source Uri="$(Resources)/totalcommander-48.png">
+                <Size Value="48" />
+            </Source>
+        </Image>
+
         <!-- Add new buttons here -->
         <!-- Ensure any new PNG files have their Build Action changed from Content to Resource -->
         <!-- If images do not appear in VS, try
                1. Deleting %LOCALAPPDATA%\Microsoft\VisualStudio\*Exp\ImageLibrary\ImageLibrary.cache 
-               2. Rebuilding this extension project (Build often ignores new image files, output DLL can be verified with dnSpy or ILSpy) -->
+               2. Cleaning and Rebuilding this extension project (Build often ignores image files, output DLL can be verified with dnSpy or ILSpy) -->
     </Images>
 </ImageManifest>

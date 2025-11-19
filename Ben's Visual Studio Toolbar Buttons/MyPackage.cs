@@ -27,11 +27,15 @@ public sealed class MyPackage: AsyncPackage {
         OleMenuCommandService commandService = (OleMenuCommandService) (await GetServiceAsync(typeof(IMenuCommandService)))!;
         DTE2                  dte            = (DTE2) (await GetServiceAsync(typeof(DTE)))!;
 
-        new GitExtensions { extensionPackage  = this, visualStudio = dte }.register(commandService);
-        new TotalCommander { extensionPackage = this, visualStudio = dte }.register(commandService);
-        new GitHub { extensionPackage         = this, visualStudio = dte }.register(commandService);
-        new Bitbucket { extensionPackage      = this, visualStudio = dte }.register(commandService);
-        new SublimeText { extensionPackage    = this, visualStudio = dte }.register(commandService);
+        registerButtons(dte, commandService);
+    }
+
+    private void registerButtons(DTE2 visualStudio, OleMenuCommandService commandService) {
+        new GitExtensions { extensionPackage  = this, visualStudio = visualStudio }.register(commandService);
+        new TotalCommander { extensionPackage = this, visualStudio = visualStudio }.register(commandService);
+        new GitHub { extensionPackage         = this, visualStudio = visualStudio }.register(commandService);
+        new Bitbucket { extensionPackage      = this, visualStudio = visualStudio }.register(commandService);
+        new SublimeText { extensionPackage    = this, visualStudio = visualStudio }.register(commandService);
 
         // Add new buttons here
     }

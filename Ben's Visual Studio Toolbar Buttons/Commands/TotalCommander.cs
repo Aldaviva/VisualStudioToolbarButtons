@@ -24,7 +24,7 @@ internal sealed class TotalCommander: AbstractButtonCommand {
         "totalcmd.exe"
     ];
 
-    public override int commandId { get; } = 0x0102;
+    public override int commandId { get; } = 105;
 
     protected override async Task onClick() {
         if (UNINSTALL_KEYS.Select(key => Registry.GetValue(key, "InstallLocation", null) as string).FirstOrDefault(s => s is not null) is not {} installationDirectory) {

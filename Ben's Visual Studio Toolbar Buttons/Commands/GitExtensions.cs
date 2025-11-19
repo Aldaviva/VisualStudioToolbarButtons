@@ -10,7 +10,7 @@ namespace Aldaviva.VisualStudioToolbarButtons.Commands;
 
 internal sealed class GitExtensions: AbstractButtonCommand {
 
-    public override int commandId { get; } = 0x101;
+    public override int commandId { get; } = 102;
 
     public const int CommandId = 0x0101;
 
