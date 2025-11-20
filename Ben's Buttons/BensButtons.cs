@@ -8,8 +8,6 @@ using System.ComponentModel.Design;
 using System.Runtime.InteropServices;
 using Task = System.Threading.Tasks.Task;
 
-[assembly: ProvideCodeBase(AssemblyName = "BensButtons", Version = "1.0.0.0", CodeBase = "$PackageFolder$\\BensButtons.dll")]
-
 namespace BensButtons;
 
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]

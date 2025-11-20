@@ -134,18 +134,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Resource Include="Resources\sublimetext-16.png" />
-    <Resource Include="Resources\sublimetext-24.png" />
-    <Resource Include="Resources\sublimetext-32.png" />
-    <Resource Include="Resources\sublimetext-48.png" />
-    <Resource Include="Resources\totalcommander-16.png" />
-    <Resource Include="Resources\totalcommander-24.png" />
-    <Resource Include="Resources\totalcommander-32.png" />
-    <Resource Include="Resources\totalcommander-48.png" />
-    <Resource Include="Resources\gitextensions-24.png" />
-    <Resource Include="Resources\gitextensions-32.png" />
-    <Resource Include="Resources\gitextensions-48.png" />
-    <Resource Include="Resources\gitextensions-16.png" />
+    <Resource Include="Resources\**\*.png" />
     <Content Include="debugging.pkgdef">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

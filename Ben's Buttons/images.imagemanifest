@@ -14,7 +14,7 @@
         <Image Guid="$(imageManifest)" ID="101" AllowColorInversion="false">
             <Source Uri="$(Resources)/bitbucket.xaml" />
         </Image>
-        
+
         <Image Guid="$(imageManifest)" ID="102" AllowColorInversion="false">
             <Source Uri="$(Resources)/gitextensions-16.png">
                 <Size Value="16" />
@@ -49,7 +49,7 @@
                 <Size Value="48" />
             </Source>
         </Image>
-        
+
         <Image Guid="$(imageManifest)" ID="105" AllowColorInversion="false">
             <Source Uri="$(Resources)/totalcommander-16.png">
                 <Size Value="16" />
@@ -66,9 +66,13 @@
         </Image>
 
         <!-- Add new buttons here -->
-        <!-- Ensure any new PNG files have their Build Action changed from Content to Resource -->
-        <!-- If images do not appear in VS, try
-               1. Deleting %LOCALAPPDATA%\Microsoft\VisualStudio\*Exp\ImageLibrary\ImageLibrary.cache 
-               2. Cleaning and Rebuilding this extension project (Build often ignores image files, output DLL can be verified with dnSpy or ILSpy) -->
+
+        <!-- 
+            If images do not appear in VS, try
+               1. Ensuring that any new PNG files have their Build Action changed from Content to Resource
+               2. Deleting %LOCALAPPDATA%\Microsoft\VisualStudio\*Exp\ImageLibrary\ImageLibrary.cache
+               3. Cleaning (really cleaning by deleting bin and obj, not MSBuild fake cleaning) and Rebuilding this extension project, because Build often ignores image files. The output DLL's resources can be verified with dnSpy or ILSpy.
+               4. Uncommenting all lines in debugging.pkgdef, restarting Visual Studio, and reading ~\ImageLibrary.log.
+        -->
     </Images>
 </ImageManifest>

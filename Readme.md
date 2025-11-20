@@ -93,7 +93,7 @@ In general, just look for all 5 instances of `Add new buttons here` and make a n
 1. Import images into the project.
     - Image files go in the `Resources` directory
     - Native raster dimensions are 16×16px for 100% scaling, and vector images are scaled correctly regardless of the viewbox size
-    - All image files must have their Build Action changed from Content to **Resource**
+    - All image files must have their Build Action changed from Content to **Resource**, which should be handled automatically by the project
     - Accepted formats are PNG (raster, 32bpp including transparency) and XAML (vector)
     - Different formats can be mixed in the same image, for example a 16px raster image for 100% scaling and a vector fallback for all other scaled sizes like 32px (200%)
     - Images can have variations for light and dark mode
