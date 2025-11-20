@@ -36,10 +36,8 @@ External Tools are easy to create, but they don't let you specify custom icons f
     - Opens current project directory in a new [Total Commander](https://www.ghisler.com) tab
 
 ## Installation
-- From [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)
-    1. TBD
-- From VSIX file
-    1. Download and run the [latest release](https://github.com/Aldaviva/BensButtons/releases/latest)'s VSIX file (TBD)
+- From [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=aldaviva.BensButtons)
+- From the [VSIX file](https://github.com/Aldaviva/BensButtons/releases/latest/download/BensButtons.vsix) from this repository's [latest release](https://github.com/Aldaviva/BensButtons/releases/latest)
 
 ## Usage
 - Buttons are available in the Tools › **Ben's Buttons** submenu
@@ -49,7 +47,7 @@ External Tools are easy to create, but they don't let you specify custom icons f
     1. Select the Tools category
     1. Select one of the [buttons](#buttons) provided by this extension, then click OK
     1. Arrange the new button using Move Up, Move Down, and Modify Selection to make it appear as desired
-- Add a keyboard shortcut to a tool
+- Add a keyboard shortcut to a button
     1. Go to Tools › Options › More Settings (VS ≥ 2026) › Keyboard
     1. Search for the command with the `Tools.BensButtons.` prefix, such as `Tools.BensButtons.GitExtensions`
     1. Type the desired key combination in the Press shortcut keys text box
